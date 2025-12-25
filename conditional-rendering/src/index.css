@@ -1,0 +1,12 @@
+
+.welcome, .logIn{
+  padding: 10px;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: green;
+}
+.logIn{
+  background-color: red;
+}
