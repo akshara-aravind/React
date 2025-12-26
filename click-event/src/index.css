@@ -1,0 +1,17 @@
+button{
+  padding: 20px 40px;
+  font-size: 24px;
+  color: #fff;
+  background-color: brown;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+p{
+  font-size: 24px;
+  color: red;
+}
+img{
+  border-radius: 8px;
+}

@@ -10,3 +10,26 @@
 .logIn{
   background-color: red;
 }
+
+/**/
+.header{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  background-color: brown;
+  color: #fff;
+}
+.lists li{
+  font-size: 2rem;
+  list-style: none;
+  color: hsl(0, 0%, 25%);
+  text-align: center;
+  margin: 0;
+}
+.lists li:hover{
+  color: hsl(0, 0%, 45%);
+  cursor: pointer;
+}
