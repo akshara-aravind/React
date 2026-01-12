@@ -1,15 +1,25 @@
+
 body{
+  height: 100vh;
   background:url(assets/nature.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
+}
+#root{
+  height: 100%;
 }
 .clock_container{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-p{
-  text-align: center;
+.clock_container p{
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px ;
+  color: #fff;
 }
