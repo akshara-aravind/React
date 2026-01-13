@@ -1,0 +1,59 @@
+body{
+  height: 100vh;
+  background-color: rgb(235, 199, 199);
+}
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  text-shadow: 0px 2px 3px;
+  font-size: 45px;
+  font-family: cursive;
+}
+.itemInput{
+  width: 350px;
+  padding: 14px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+button{
+  padding: 14px 15px;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  background-color: brown;
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease-in-out;
+}
+button:hover{
+  transform: scale(1.1);
+}
+ul{
+  list-style: none;
+  font-size: 18px;
+}
+li{
+  list-style-type: decimal;
+}
+.deleteBtn{
+  margin-left: 20px;
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.todoInput{
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  background-color:rgb(230, 221, 221);
+}
+.todoInput.checked{
+  text-decoration: line-through;
+}

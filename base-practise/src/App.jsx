@@ -36,7 +36,20 @@ import { IncrementFontSize } from "./components/16Onchange.jsx"
 //Array based useState
  import { AddItem } from "./components/17Array.jsx"
 //useEffect
+import { PageTilte } from "./components/18UseEffect.jsx"
+import { ApiFetch } from "./components/18UseEffect.jsx"
+import { Timer } from "./components/18UseEffect.jsx"
+import { WindowResize } from "./components/18UseEffect.jsx"
 
+//props
+import { ChildDisplay } from "./components/9Props.jsx"
+import { ButtonComponent } from "./components/9Props.jsx"
+import { ReusableCard } from "./components/9Props.jsx"
+// import profile from "./assets/profile.jpeg"
+import { StatusBadge } from "./components/9Props.jsx"
+import { ColorPicker } from "./components/19ColorPicker.jsx"
+import { ChangeFontSize } from "./components/19ColorPicker.jsx"
+import { ChangeBackGround } from "./components/19ColorPicker.jsx"
 function App() {
 
   return (
@@ -69,7 +82,27 @@ function App() {
        <TextcolorChange></TextcolorChange>
        <IncrementFontSize></IncrementFontSize> */}
 
-       <AddItem></AddItem>
+       {/* <AddItem></AddItem> */}
+       {/* <PageTilte></PageTilte> */}
+       {/* <ApiFetch></ApiFetch> */}
+       {/* <Timer></Timer> */}
+       {/* <WindowResize></WindowResize> */}
+
+       {/* props */}
+       {/* <ChildDisplay name = "Alexa"></ChildDisplay> */}
+       {/* <ButtonComponent title="Add Item" color="grey"></ButtonComponent><br /><br /> */}
+       {/* <ButtonComponent title="Add Item" color="yellow"></ButtonComponent> */}
+       {/* <ReusableCard name="Alex" description = "Frontend Developer" image ={profile} button="Another">
+        <button style={{border:'none',backgroundColor:"brown",color:'#fff',padding:'8px',borderRadius:'15px',marginBottom:'10px'}}>Learn More</button>
+       </ReusableCard>
+       <StatusBadge status ="online"></StatusBadge>
+       <StatusBadge status ="offline"></StatusBadge>
+       <StatusBadge status ="busy"></StatusBadge> */}
+
+       {/* ColorPicker */}
+       {/* <ColorPicker></ColorPicker> */}
+       {/* <ChangeFontSize></ChangeFontSize> */}
+       <ChangeBackGround></ChangeBackGround>
     </>
   )
 }

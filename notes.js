@@ -55,3 +55,19 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
  4 Fetching data from an API
  5 Clean up when a component unmounts
  */
+
+
+ //files
+ //eslint.config.js --> code quality & error checking
+ //package.json --> project name, dependencies, and scripts
+ //package-lock.json --> recorde of installed packages
+ //README.md --> project documentation file
+ //vite.config.js --> vite build tool configuration
+ //.gitignore --> tells git which files not to upload
+ //src --> main react code lives here, main.jsx, app.jsx, components, assests, styles
+ //public --> images, public images
+ //node_modules --> all installed libraries
+ //assests --> images used inside react components
+
+
+ //state in React:- a built-in object used to store data or information about a component that can change over time.
