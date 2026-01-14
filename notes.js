@@ -71,3 +71,30 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
 
 
  //state in React:- a built-in object used to store data or information about a component that can change over time.
+
+ //UseContext:- React hook that allows you to share values between multiple levels of components without passing props through each level.
+ //--> useContext is react hook used to share data globally beteen components without props drilling.
+
+//Steps:-
+/*
+//PROVIDER COMPONENT
+1.import {createContext} from 'react';
+2.export const MyContext = createContext();
+3.<MyContext.Provider value ={value}>
+      <Child />
+  <MyContext.Provider>
+
+  //CONSUMER COMPONENT
+  1.import React, {useContext} from 'react'
+    import {MyContext} from './ComponentA';
+  2.const value = useContext{Mycontext}
+*/
+
+//And also create context.js in seperate file because shows an warning message , this is onlu a development tooling warning.
+
+//USES
+//-->dark/light mode
+//-->authentication
+
+//WHY ADDING VALUE IN INPUT
+//-->without adding value browser controls the input, react only listens otherwise react controls the input
