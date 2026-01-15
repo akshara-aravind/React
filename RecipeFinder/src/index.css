@@ -1,0 +1,35 @@
+@font-face{
+  font-family: 'sedan';
+  src: url(assets/yMJRMIlvYZ3Jn1Y30Aq7dy0.woff2);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  font-family: 'sedan';
+  font-size: 45px;
+  color: orange;
+}
+input{
+  width: 400px;
+  padding: 15px;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.2);
+  border: none;
+}
+.findBtn{
+  padding: 14.5px 20px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.2);
+  border-radius: 0px 8px 8px 0px;
+  color: #fff;
+  background-color: green;
+  transition: transform 0.4s ease-in-out;
+}
+.findBtn:hover{
+  transform: scale(1.1);
+}
