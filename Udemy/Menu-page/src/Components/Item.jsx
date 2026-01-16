@@ -1,13 +1,14 @@
 import Img from "../assets/focaccia.jpg"
-export function Items(props){
+export function Items({pizzaObj}){
+    // if(pizzaObj.soldOut) return null
     return(
-        <div className="pizza">
-            <img src={props.photoName} alt={props.name} />
+        <li className={`pizza ${pizzaObj.soldOut ? 'sold-out': ''}`}>
+            <img src={pizzaObj.photoName} alt={pizzaObj.name} />
             <div>
-                <h3>{props.name}</h3>
-                <p>{props.ingredients}</p>
-                <span>{props.price+3}</span>
+                <h3>{pizzaObj.name}</h3>
+                <p>{pizzaObj.ingredients}</p>
+                <span>{pizzaObj.soldOut ? 'SOLD OUT':pizzaObj.price}</span>
             </div>
-        </div>
+        </li>
     )    
 }
