@@ -98,3 +98,42 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
 
 //WHY ADDING VALUE IN INPUT
 //-->without adding value browser controls the input, react only listens otherwise react controls the input
+
+//UDEMY
+
+//obj.map have an key for  - identify each element uniquely.
+
+//React FRAGMENT --> <></> this parent element is fragement.
+
+//State:-components memeory
+//--> data that a component can hold over time necessary for information that it needs to remember throught the app's lifecycle.
+
+// arrow fn in useState ensures you always get the latest state value.
+//-->if we use like this setStep(s +1) twice does not update by two by using 
+//   like this setStep(s =>s+1) twice this update by 2
+
+//we using addEventListener then the page is reloaded so --> e.preventDefault() is used for removing the submition.
+
+//-->STATE vs PROPS
+//-->internal data,owned by component --  external data,owned by parent component
+//-->re-render  -- read-only , receving new props causes component to re-render.
+
+//controlled element -->we call an input element that is completely synchronised with state means form input whose value is fully controlled by React state.
+
+//2 TYPES OF STATE
+ //-->LOCAL STATE
+  //#State belongs to one component only
+ //-->GLOBAL STATE
+  //#shares across multiple components
+  //#using by Context API , Redux-library 
+
+//--->USES OF STATE
+//- need to store data
+//- will data change some point
+
+//-->Derived state: calculated from existing state or props not stored seperately.
+
+//children--> special props whatever you put between a components opening and closing tags.
+//eg:- return <div className="card">{children}</div>;
+
+//100 4mins

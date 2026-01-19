@@ -19,14 +19,13 @@ export default function DateCount(){
                 <button onClick={() => setCount(c => c+step)}>+</button>
             </div>
             <p style={{textAlign:"center"}}>
-            <span>
-                <strong>
-                    {count === 0? 'Today is '
-                                 :count > 0 ? `${count} days from today is `
-                                 :`${Math.abs(count)} days ago was ` }
-                </strong>
-            </span>
-            <span><strong>{date.toDateString()}</strong></span>
+                <span>
+        
+                        {count === 0? 'Today is '
+                                    :count > 0 ? `${count} days from today is `
+                                    :`${Math.abs(count)} days ago was ` }
+                </span>
+                <span><strong>{date.toDateString()}</strong></span>
             </p>
         </>
     )

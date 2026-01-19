@@ -1,10 +1,11 @@
-export default function Items({item}){
+export default function Items({item,onDeleteItem,onToggle}){
     return(
         <li>
+            <input type="checkbox"  value={item.packed} onChange={() => onToggle(item.id)}/>
             <span style={item.packed === true ? {textDecoration:'line-through'}:{}}>
                 {item.quantity} {item.description}
             </span>
-            <button>❌</button>
+            <button onClick={() => onDeleteItem(item.id)}>❌</button>
         </li>
     )
 }
