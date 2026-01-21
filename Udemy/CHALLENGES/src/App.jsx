@@ -5,6 +5,7 @@ import FlashCard from "./Components/Exercise1/flashcard.jsx"
 import UpdateDateCount from "./Components/challenge4/updateDateCount.jsx"
 import Accordion from "./Components/Exercise2/Accordion.jsx"
 import TipCalculator from "./Components/challenge5/tipCalculator.jsx"
+import Text from "./Components/challenge6/Text.jsx"
 function App() {
   return (
     <>
@@ -14,7 +15,8 @@ function App() {
       {/* <FlashCard /> */}
       {/* <UpdateDateCount /> */}
       {/* <Accordion /> */}
-      <TipCalculator />
+      {/* <TipCalculator /> */}
+      <Text />
     </>
   )
 }

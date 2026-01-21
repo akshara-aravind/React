@@ -136,4 +136,73 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
 //children--> special props whatever you put between a components opening and closing tags.
 //eg:- return <div className="card">{children}</div>;
 
-//100 4mins
+//COMPONENT CATEGRORY
+//1 STATELESS or PRESENTATIONAL
+  //# no state, recevie props , usually small and reusable
+
+//2 STATEFUL
+  //# have state
+
+//3 STRUTURAL
+  //# pages, layouts, or screens of the app, can be huge and non-reusable
+
+//component composition
+//--> component composition means building a UI by combining small, reusable components instead of writing one large component.
+
+//State Lifting:- moving state to the closest parent so multiple child component can use it
+//props drilling :- passing props through many components 
+//avoid this we using children for passing child inside the main component
+//eg;- <nav>
+//        <input>
+//        <button>
+//     </nav>
+// here we pass value direct to child without passing the parent nav.
+
+//if an div has role = 'button' this is for this div behave like an button.
+
+//-->Props as component API
+//* props are the public interface(API) of a component - the way other components communicate with and configure it.
+
+//For adding propType:-
+//1) import PropTypes from 'prop-types'
+
+//2)StarRating.PropTypes={
+//     maxRating:PropTypes.number
+// }
+
+                                /*TAILWIND*/
+//TAILWIND SETUP
+
+//1) Firsly create an folder using npm create vite@latest
+//2) then that folder 
+//  * npm install tailwindcss @tailwindcss/vite
+//3) in vite.config.js --> add import tailwindcss from '@tailwindcss/vite' and 
+//   in plugins:-->  plugins: tailwindcss() add this 
+//4) after that import in css like this @import "tailwindcss";
+//5) then run it, npm run dev
+
+//full height:- h-screen
+//for color not have any text-brown so put like text-amber-800 
+//font -size : text-2xl
+//padding:- p-5- for all direction
+        // px-5 --> for left and right
+        // py-5 --> for top and bottom
+        // pt --> top
+        // pb --> bottom
+        // pl --> left
+        // pr --> right
+//margin :- same as padding like m-5, mx,my,..
+//border-radius:- rounded-lg: 8px
+  //for left of bottom :- rounded-bl-lg
+  //for circle--> rounded-full
+//box-shadow:- shadow, shadow-xl,md ,
+//hover:--> hover:text-3xl transition-all duration-300
+//grid:--> grid grid-cols-2
+
+//sm:grid-cols-2 means  
+/*                     sm >= 640px 2 other in small size one
+                        md >= 768px
+                        lg >= 1024px
+                        xl >= 1280px
+*/
+//REACT WORKS BEHIND THE SCENES
