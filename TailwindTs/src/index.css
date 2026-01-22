@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-counterBackground:oklch(90.1% 0.058 230.902)
+}
+
+@font-face{
+    font-family: 'sedan';
+    src: url('./assets/yMJRMIlvYZ3Jn1Y30Aq7dy0.woff2');
+} 
+
+@theme {
+  --font-sedan:'sedan';
+  --font-cursive:'cursive';
+  --bg-banner:url('./assets/home-banner-background.png')
+}

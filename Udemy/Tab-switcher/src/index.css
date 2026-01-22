@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/*Global element are written in layer base*/
+@layer base{
+  button{
+    @apply border-0 text-inherit;
+  }
+}
+.toggle{
+  @apply absolute right-0 bg-none text-3xl p-4;
+}
+.tabs{
+  @apply mb-8
+}
+/*for applying exact color put this*/
+@layer components{
+  .tab{
+    @apply rounded-xl bg-indigo-50 py-3 px-6 mr-8 text-base font-bold transition-all duration-300;
+    color:#364fc7;
+  }
+} @layer components {
+  .tab.active,
+  .tab:hover{
+    background-color: #364fc7;
+    color: #fff;
+  }
+}
+
+.tab-content{
+  @apply bg-indigo-50 p-8 rounded-xl
+}
+
+@layer components{
+  .tab-content h4{
+    @apply text-xl mb-16 font-bold;
+    color: #364fc7;
+  }
+}
+.tab-content p{
+  @apply text-lg;
+}
+
+.tab-actions{
+  @apply flex justify-between mt-4 mb-6
+}
+@layer components{
+  .tab-actions > button{
+    @apply bg-transparent underline text-sm;
+    color: #4c6ef5;
+  }
+}
+.hearts-counter{
+  @apply flex items-center gap-8;
+}
+ @layer components{
+  .hearts-counter button{
+    @apply bg-red-500 py-1 px-1.5 rounded text-white leading-none;
+  }
+ }
+ .tab-undo{
+  @apply flex gap-8;
+ }
+ @layer components{
+  .tab-undo button{
+    @apply text-white py-1.5 px-3 rounded ;
+    background-color: #364fc7;
+  }
+ }

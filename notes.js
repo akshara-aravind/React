@@ -205,4 +205,40 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
                         lg >= 1024px
                         xl >= 1280px
 */
+
+//--> Global element like button,h2,p are written css file like
+// @label base{ button{@apply rounded}}
+
+//for applying exact color we use "@label components" inside this add class
+// for single purpose use "@layer utilities"
+
+//for color :- text-white
+//line height--> "leading" for 1 i leading-none
+
+//for adding same color for more div and add hex color we put like this
+/**
+ '@theme' {
+  --color-background: #050030;
+  --color-primary: #ebebed;
+}
+  then in that bosition add like text-background or text-primary
+ */
+//TS-------------------------
+/*
+type TabContent={
+  summary:string;
+  details:string;
+}
+type TabContentProps ={
+    item:TabContent
+}
+export default  function TabContent({item}:TabContentProps){
+*/
 //REACT WORKS BEHIND THE SCENES
+
+//components :- blueprint of a house 
+//Element :- Design sketch
+//Instance:- Actural house built from blueprint
+
+//VIRTUAL DOM:- tree of element is kept in memory it is the virtual DOM.
+//--> virtual dom is a copy of the real webpage UI kept  inside js
