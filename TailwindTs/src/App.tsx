@@ -1,6 +1,9 @@
 import ProfileCard from "./Components/profile"
 import InputPreview from "./Components/inputPreview"
-import Food from "./Components/Recipe"
+import Food from "./Components/Recipe/Recipe"
+import About from "./Components/Recipe/about"
+import TypedButton from "./Components/typedButton"
+import Status from "./Components/status"
 
 
 function App() {
@@ -14,10 +17,23 @@ function App() {
         <ProfileCard name='Alen' age={25} isOnline={false}/>
         <ProfileCard name='Alen' age={25} isOnline={false}/>
       </div> */}
+
+      {/* profile card with child */}
+      {/* <ProfileCard name='Vax' age={23} isOnline={true}>
+         <h2>This is Children passing in TS</h2>
+      </ProfileCard> */}
         {/* <InputPreview /> */}
-        <div className="bg-[image:var(--bg-banner)] bg-cover bg-center min-h-screen">
+        <div className="backgroundImg">
         <Food />
+        <About />
         </div>
+        {/* <TypedButton label='Submit' varient='primary'/>
+        <TypedButton label='Submit' varient='secondary'/> */}
+
+        {/* with union */}
+        {/* <Status status="success" />
+        <Status status="failed" />
+        <Status status="error" /> */}
     </>
   )
 }

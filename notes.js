@@ -47,6 +47,7 @@ Introduction to JSX (writing HTML-like syntax inside JavaScript)
 //    this component mounts
 //     the state of a value
 
+//useRef :- 'use Reference' dies
 //USES
 /**
  1 Event Listeners
@@ -233,6 +234,16 @@ type TabContentProps ={
     item:TabContent
 }
 export default  function TabContent({item}:TabContentProps){
+
+//in TS we want to we dont add an name in parent but we type in child like
+// name:string then we want to store optional use 
+//name?:string
+
+//--> or is | this is union type 
+//red | green
+
+//--> for passing children using type
+//children:React.ReactNode;
 */
 //REACT WORKS BEHIND THE SCENES
 
@@ -242,3 +253,9 @@ export default  function TabContent({item}:TabContentProps){
 
 //VIRTUAL DOM:- tree of element is kept in memory it is the virtual DOM.
 //--> virtual dom is a copy of the real webpage UI kept  inside js
+
+//useState:- Re-renders the component when the state value changes.
+//useRef: - 'use Reference' Does not cause re-renders when its value changes.
+
+//1) const ref = useRef(initialValue)
+//then reuse like ref.current++;

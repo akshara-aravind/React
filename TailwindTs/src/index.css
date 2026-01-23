@@ -14,3 +14,13 @@
   --font-cursive:'cursive';
   --bg-banner:url('./assets/home-banner-background.png')
 }
+
+@layer utility {
+  .backgroundImg{
+     background:url('./assets/home-banner-background.png');
+     background-repeat: no-repeat;
+     background-position: right;
+    background-size: contain;
+    min-height: 100vh;
+  }
+}
